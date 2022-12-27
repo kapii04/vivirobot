@@ -35,11 +35,11 @@
     
 ### Tutorial Deploy on VPS
 ```console
-root@PrimeMega~ $ screen -S PrimeMega
-root@PrimeMega~ $ git clone https://github.com/Toni880/PrimeMega
-root@PrimeMega~ $ cd PrimeMega
+root@PrimeMega~ $ screen -S vivirobot
+root@PrimeMega~ $ git clone https://github.com/kapii04/vivirobot
+root@PrimeMega~ $ cd vivirobot
 root@PrimeMega~ $ pip3 install -U -r requirements.txt
-root@PrimeMega~ $ cp prime.env .env
+root@PrimeMega~ $ cp vivi.env .env
 root@PrimeMega~ $ nano .env
 root@PrimeMega~ $ bash start
 ```
