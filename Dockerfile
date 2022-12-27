@@ -63,12 +63,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/PrimeMega 
-RUN git clone -b Master https://github.com/Toni880/PrimeMega /root/PrimeMega
-WORKDIR /root/PrimeMega
+# Copy Python Requirements to /root/vivirobot 
+RUN git clone -b Master https://github.com/kapii04/vivirobot /root/vivirobot
+WORKDIR /root/vivirobot
 
-#Copy config file to /root/PrimeMega/PrimeMega
-COPY ./PrimeMega/sample_config.py ./PrimeMega/config.py* /root/PrimeMega/PrimeMega/
+#Copy config file to /root/vivirobot/vivirobot
+COPY ./vivirobot/sample_config.py ./vivirobot/config.py* /root/vivirobot/vivirobot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
